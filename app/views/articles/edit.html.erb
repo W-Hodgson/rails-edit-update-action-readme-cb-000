@@ -6,7 +6,13 @@
   </head>
   <body>
     <%= form_tag articles_path do %>
+  <label>Article title:</label><br>
+  <%= text_field_tag :title %><br>
 
-    <% end %>
+  <label>Article Description</label><br>
+  <%= text_area_tag :description %><br>
+
+  <%= submit_tag "Submit Article" %>
+<% end %>
   </body>
 </html>
